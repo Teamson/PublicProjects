@@ -1,0 +1,1 @@
+module.exports = [1,["3byOlP8IRLYoX15k8q4IE6"],["_textureSetter"],["cc.SpriteFrame"],0,[{"name":"phb_f_03","rect":[0,0,386,64],"offset":[0,0],"originalSize":[386,64],"capInsets":[0,0,0,0]}],[0],0,[0],[0],[0]];
