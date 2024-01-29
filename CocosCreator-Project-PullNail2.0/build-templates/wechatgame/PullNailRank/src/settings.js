@@ -1,1 +1,0 @@
-window._CCSettings={platform:"wechatgame-subcontext",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scene.fire",orientation:"",jsList:[],subContextRoot:"PullNailRank"};
