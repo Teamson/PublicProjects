@@ -1,0 +1,6 @@
+2021/04/23-11:38:56.334 61a8 Creating DB D:\nimoJACK\Work\Projects\03\FatBearRun\FatBearRun\.laya\chrome\Default\IndexedDB\https_xui.ptlogin2.qq.com_0.indexeddb.leveldb since it was missing.
+2021/04/23-11:38:56.348 61a8 Reusing MANIFEST D:\nimoJACK\Work\Projects\03\FatBearRun\FatBearRun\.laya\chrome\Default\IndexedDB\https_xui.ptlogin2.qq.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/04/23-11:39:04.949 60a8 Level-0 table #5: started
+2021/04/23-11:39:04.954 60a8 Level-0 table #5: 34639 bytes OK
+2021/04/23-11:39:04.958 60a8 Delete type=0 #3
+2021/04/23-11:39:04.958 60a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

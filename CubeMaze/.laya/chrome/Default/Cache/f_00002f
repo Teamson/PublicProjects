@@ -1,0 +1,545 @@
+<style>
+    .dim-selector .sl-v-list li {
+     min-width: 50px;
+    }
+
+    .link-style a:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .term-range input {
+        width: 40px;
+        height: 25px;
+    }
+
+    span.btn-default:hover {
+        cursor: pointer;
+    }
+
+</style>
+<div class="dim-selector-bar" id="dimFilterContainer">
+
+    </div>
+    <div class="dim-selector ">
+        </div>
+
+    <div class="dim-selector ">
+        <div class="s-line s-brand hide">
+                        <div id="dim_wrap_type_62" class="sl-wrap" data-dim-id="type_62">
+                            <div class="sl-key"><span>种类</span></div>
+                            <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_type_62" class="dim_ul dim-row" data-dim-id="type_62" data-row-height="26px" style="height: 26px;">
+            <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26188" data-metric-code="natural_environment_3"
+                                          data-name="自然环境"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','natural_environment_3');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26188">
+                                        <i></i>自然环境</span>
+                                    <span class="sl_v_metric_cnt">190</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26189" data-metric-code="vehicle_7"
+                                          data-name="交通工具"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','vehicle_7');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26189">
+                                        <i></i>交通工具</span>
+                                    <span class="sl_v_metric_cnt">4.4w</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26190" data-metric-code="human_voice_1"
+                                          data-name="人类声音"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','human_voice_1');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26190">
+                                        <i></i>人类声音</span>
+                                    <span class="sl_v_metric_cnt">87</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26191" data-metric-code="animal_voice_1"
+                                          data-name="动物声音"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','animal_voice_1');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26191">
+                                        <i></i>动物声音</span>
+                                    <span class="sl_v_metric_cnt">471</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26195" data-metric-code="game_audio"
+                                          data-name="游戏音效"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','game_audio');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26195">
+                                        <i></i>游戏音效</span>
+                                    <span class="sl_v_metric_cnt">341</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26197" data-metric-code="daily_environment_1"
+                                          data-name="日常环境"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','daily_environment_1');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26197">
+                                        <i></i>日常环境</span>
+                                    <span class="sl_v_metric_cnt">102</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26198" data-metric-code="sports_competition_3"
+                                          data-name="体育竞技"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','sports_competition_3');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26198">
+                                        <i></i>体育竞技</span>
+                                    <span class="sl_v_metric_cnt">611</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26199" data-metric-code="production_office_1"
+                                          data-name="生产办公"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','production_office_1');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26199">
+                                        <i></i>生产办公</span>
+                                    <span class="sl_v_metric_cnt">158</span>
+                </li>
+                <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="metric" data-selected="false"
+                                          data-dim-id="type_62" data-dim-code="type_62"
+                                          data-dim-name="种类"
+                                          data-metric-id="26200" data-metric-code="daily_life_1"
+                                          data-name="日常生活"
+                                          data-short-code=""
+                                          data-short-path=""
+                                         
+                                          data-short-path-ordered=""
+                                          data-parent-metric=""
+                                          onclick="gei.search.filterSearch('type_62','daily_life_1');"
+                                          cnt_stat_target_type="metric_click_ip" cnt_stat_target_id="26200">
+                                        <i></i>日常生活</span>
+                                    <span class="sl_v_metric_cnt">7210</span>
+                </li>
+                </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="type_62">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="type_62" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="type_62" data-selected="false"
+           onclick="gei.search.cancel('type_62');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="type_62">
+    <a class="sl-e-more" href="javascript:;"
+           data-btn-type="more" data-dim-id="type_62" data-selected="false"
+           onclick="gei.search.moreMetrics('type_62');">更多<i></i></a>
+    <a class="sl-e-multiple" href="javascript:;"
+           data-btn-type="multi" data-dim-id="type_62" data-selected="false"
+           onclick="gei.search.multiSelect('type_62');">多选<i></i></a>
+    </div></div>
+                    </div>
+                <div class="s-line s-brand">
+                <div id="dim_wrap_senior" class="sl-wrap" data-dim-id="dim_senior">
+                    <div class="sl-key"><span>高级选项</span></div>
+                    <div class="sl-value">
+                        <div class="sl-v-tab">
+                            <div class="sl-tab-trigger clearfix">
+                                <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="alen">
+                                        <span class="text">长度</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="sizem">
+                                        <span class="text">大小</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="声道">
+                                        <span class="text">声道</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="格式">
+                                        <span class="text">格式</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="采样率">
+                                        <span class="text">采样率</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        <span class="trig-item"  data-btn-type="select"
+                                          data-select-type="term" data-select-id="比特率">
+                                        <span class="text">比特率</span>
+                                        <i class="arrow"></i>
+                                    </span>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="sl-tab-cont">
+                        <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="alen" data-dim-id="alen">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_alen" class="dim_ul dim-row" data-dim-id="alen" data-term-id="alen" data-row-height="auto" style="height: auto;">
+            <div class="term-range" data-group-id="alen">
+                    <input type="text" class="min-input" placeholder="秒" data-group-id="alen"/>
+                    -
+                    <input type="text" class="max-input" placeholder="秒" data-group-id="alen"/>
+                    <span class="btn-default btn-sm"
+                          data-btn-type="term-group"
+                          data-group-id="alen"
+                          data-tpl="alen_${minValue}_${maxValue}"
+                          data-term-name="长度"
+                          data-term-unit="秒"
+                          onclick="gei.search.filterTermSearch('alen','');">
+                                    确定
+                                </span>
+                </div>
+            </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="alen">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="alen" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="alen" data-selected="false"
+           onclick="gei.search.cancel('alen');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="alen">
+    </div></div>
+                                <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="sizem" data-dim-id="sizem">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_sizem" class="dim_ul dim-row" data-dim-id="sizem" data-term-id="sizem" data-row-height="auto" style="height: auto;">
+            <div class="term-range" data-group-id="sizem">
+                    <input type="text" class="min-input" placeholder="M" data-group-id="sizem"/>
+                    -
+                    <input type="text" class="max-input" placeholder="M" data-group-id="sizem"/>
+                    <span class="btn-default btn-sm"
+                          data-btn-type="term-group"
+                          data-group-id="sizem"
+                          data-tpl="sizem_${minValue}_${maxValue}"
+                          data-term-name="大小"
+                          data-term-unit="M"
+                          onclick="gei.search.filterTermSearch('sizem','');">
+                                    确定
+                                </span>
+                </div>
+            </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="sizem">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="sizem" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="sizem" data-selected="false"
+           onclick="gei.search.cancel('sizem');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="sizem">
+    </div></div>
+                                <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="声道" data-dim-id="声道">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_声道" class="dim_ul dim-row" data-dim-id="声道" data-term-id="声道" data-row-height="auto" style="height: auto;">
+            <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="声道" data-root-name="声道"
+                                          data-term-id="channels_1" data-term-name="单声道"
+                                          onclick="gei.search.filterTermSearch('声道','channels_1');"
+                                    >
+                                        <i></i>单声道</span>
+                        <span class="sl_v_metric_cnt">2.3w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="声道" data-root-name="声道"
+                                          data-term-id="channels_2" data-term-name="立体声"
+                                          onclick="gei.search.filterTermSearch('声道','channels_2');"
+                                    >
+                                        <i></i>立体声</span>
+                        <span class="sl_v_metric_cnt">1.8w</span>
+                    </li>
+
+                    </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="声道">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="声道" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="声道" data-selected="false"
+           onclick="gei.search.cancel('声道');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="声道">
+    </div></div>
+                                <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="格式" data-dim-id="格式">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_格式" class="dim_ul dim-row" data-dim-id="格式" data-term-id="格式" data-row-height="auto" style="height: auto;">
+            <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="mp3" data-term-name="mp3"
+                                          onclick="gei.search.filterTermSearch('格式','mp3');"
+                                    >
+                                        <i></i>mp3</span>
+                        <span class="sl_v_metric_cnt">3766</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="wav" data-term-name="wav"
+                                          onclick="gei.search.filterTermSearch('格式','wav');"
+                                    >
+                                        <i></i>wav</span>
+                        <span class="sl_v_metric_cnt">3.6w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="ogg" data-term-name="ogg"
+                                          onclick="gei.search.filterTermSearch('格式','ogg');"
+                                    >
+                                        <i></i>ogg</span>
+                        <span class="sl_v_metric_cnt">236</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="mid" data-term-name="mid"
+                                          onclick="gei.search.filterTermSearch('格式','mid');"
+                                    >
+                                        <i></i>mid</span>
+                        <span class="sl_v_metric_cnt">7</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="wma" data-term-name="wma"
+                                          onclick="gei.search.filterTermSearch('格式','wma');"
+                                    >
+                                        <i></i>wma</span>
+                        <span class="sl_v_metric_cnt">70</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="格式" data-root-name="格式"
+                                          data-term-id="flac" data-term-name="flac"
+                                          onclick="gei.search.filterTermSearch('格式','flac');"
+                                    >
+                                        <i></i>flac</span>
+                        <span class="sl_v_metric_cnt">677</span>
+                    </li>
+
+                    </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="格式">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="格式" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="格式" data-selected="false"
+           onclick="gei.search.cancel('格式');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="格式">
+    </div></div>
+                                <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="采样率" data-dim-id="采样率">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_采样率" class="dim_ul dim-row" data-dim-id="采样率" data-term-id="采样率" data-row-height="auto" style="height: auto;">
+            <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="采样率" data-root-name="采样率"
+                                          data-term-id="samplingRate_gte_22" data-term-name="≥ 22"
+                                          onclick="gei.search.filterTermSearch('采样率','samplingRate_gte_22');"
+                                    >
+                                        <i></i>≥ 22</span>
+                        <span class="sl_v_metric_cnt">4w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="采样率" data-root-name="采样率"
+                                          data-term-id="samplingRate_gte_44" data-term-name="≥ 44"
+                                          onclick="gei.search.filterTermSearch('采样率','samplingRate_gte_44');"
+                                    >
+                                        <i></i>≥ 44</span>
+                        <span class="sl_v_metric_cnt">3.6w</span>
+                    </li>
+
+                    </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="采样率">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="采样率" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="采样率" data-selected="false"
+           onclick="gei.search.cancel('采样率');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="采样率">
+    </div></div>
+                                <div class="sl-tab-cont-item sl-wrap" style="display: none;" data-select-type="term"
+                                         data-select-id="比特率" data-dim-id="比特率">
+                                        <div class="sl-value">
+    <div class="sl-v-list">
+        <ul id="dim_ul_比特率" class="dim_ul dim-row" data-dim-id="比特率" data-term-id="比特率" data-row-height="auto" style="height: auto;">
+            <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="比特率" data-root-name="比特率"
+                                          data-term-id="bitRate_gte_32" data-term-name="≥ 32"
+                                          onclick="gei.search.filterTermSearch('比特率','bitRate_gte_32');"
+                                    >
+                                        <i></i>≥ 32</span>
+                        <span class="sl_v_metric_cnt">4.1w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="比特率" data-root-name="比特率"
+                                          data-term-id="bitRate_gte_64" data-term-name="≥ 64"
+                                          onclick="gei.search.filterTermSearch('比特率','bitRate_gte_64');"
+                                    >
+                                        <i></i>≥ 64</span>
+                        <span class="sl_v_metric_cnt">4.1w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="比特率" data-root-name="比特率"
+                                          data-term-id="bitRate_gte_128" data-term-name="≥ 128"
+                                          onclick="gei.search.filterTermSearch('比特率','bitRate_gte_128');"
+                                    >
+                                        <i></i>≥ 128</span>
+                        <span class="sl_v_metric_cnt">4w</span>
+                    </li>
+
+                    <li class="" style="width:145px;">
+                                    <span class="sl_v_metric link-style"
+                                          data-btn-type="term" data-selected="false"
+                                          data-root-id="比特率" data-root-name="比特率"
+                                          data-term-id="bitRate_gte_352" data-term-name="≥ 352"
+                                          onclick="gei.search.filterTermSearch('比特率','bitRate_gte_352');"
+                                    >
+                                        <i></i>≥ 352</span>
+                        <span class="sl_v_metric_cnt">3.5w</span>
+                    </li>
+
+                    </ul>
+    </div>
+    <div class="sl-btns" data-btn-type="confirm_btn_bar" data-dim-id="比特率">
+        <a class="btn btn-primary disabled" href="javascript:;"
+           data-btn-type="confirm" data-dim-id="比特率" data-selected="false"
+           onclick="gei.search.doSearch();">确定</a>
+        <a class="btn btn-default" href="javascript:;"
+           data-btn-type="cancel" data-dim-id="比特率" data-selected="false"
+           onclick="gei.search.cancel('比特率');">取消</a>
+    </div>
+</div>
+<div class="sl-ext" style="display: block;" data-btn-type="opt_btn_bar" data-dim-id="比特率">
+    </div></div>
+                                </div>
+                </div>
+            </div>
+        </div>
+<script>
+    $(function () {
+        gei.search.loadSelectMetric();
+    });
+</script>

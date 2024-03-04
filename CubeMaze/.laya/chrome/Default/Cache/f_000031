@@ -1,0 +1,3719 @@
+<div class="detail-tab-container">
+        <ul class="nav nav-tabs" id="searchDetailTabContainer">
+            <script id="pjaxCacheBody_b642e5e9bba14bb7a187f71392fed848">
+  $(function () {
+    var param = {
+      url: '/s/filter/detailTab'
+    };
+    
+             param['q'] = '倒车';
+        
+             param['type'] = 'sound';
+        
+             param['_pjax'] = '#resContainer';
+        
+
+    if (param.url == '') {
+      gei.util.alertWarn("请设置回调url!");
+      return;
+    }
+
+    gei.core.eventBus.fire("beforePjaxCacheRequested",param);
+    //NProgress进度条
+    NProgress.start();
+    gei.ajaxWithError({
+      url: param.url,
+      dataType: 'html',
+      data: param,
+      beforeSend: function (request) {
+        request.setRequestHeader("pjax-cache", "yes");
+      },
+    }, function (data, textStatus) {
+      var container = $('#pjaxCacheBody_b642e5e9bba14bb7a187f71392fed848').parent();
+      if (container.length == 0) {
+        dlog("pjaxCacheBody 请设置一个父元素!");
+        return;
+      }
+      container.html(data);
+      NProgress.done();
+      gei.core.eventBus.fire("afterPjaxCacheDone",param);
+    });
+  });
+</script></ul>
+        <div class="detail-right-bar" >
+            <span class="search-order-group">
+            排序：
+            <a class="nav-pills-small-a active"
+               onclick="gei.search.doSearchByOrder(this);">综合排序</a>
+            <a class="nav-pills-small-a " data-order="download"
+               onclick="gei.search.doSearchByOrder(this);">下载量</a>
+        </span>
+<span class="search-page-info">
+        <div class="f-pager">
+                <span class="fp-text">
+                    <b class="pageInfo_currentPage">1</b>
+                    <em>/</em>
+                    <i class="pageInfo_totalPage">200</i>
+                </span>
+
+                <a title="上一页" class="fp-prev disabled" href="javascript:;"
+                   >&lt;</a>
+                <a title="下一页" class="fp-next "
+                   href="javascript:;"
+                   onclick="gei.search.changePageNum('2');">&gt;</a>
+
+            </div>
+        </span></div>
+    </div>
+<input type="hidden" id="searchPageIsLayoutRowStyle" value="true"/>
+<!-- 设置一个挂载类型，用于js判断，进行处理滚动事件 -->
+<input id="mount-type" style="display: none" value="subject"/>
+<div id="search-content-recommend-search-content">
+    <div id="searchContainer" class="search-body-container unit-container-list">
+                <div id="unitBox_item-35579136" itemid="35579136" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-35579136">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_35579136"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="35579136" itembox="35579136"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_35579136" itemid="35579136"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="35579136" extime="1619233200858" token="f83b9273c6"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    倒车请注意mp3</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:wav 文件大小:1m'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        749</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="7970">
+                <i class="icon-time"></i>
+                00:07</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_35579136" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_35579136" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="35579136" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-35579136">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-35579136" data-key="sound_category-item-35579136" data-column="sound_category" data-type="item" data-id="35579136" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_35579136" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_35579136" itemid="35579136"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="35579136" extime="1619233200861" token="fac37bfed2"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35579136" itemid="35579136"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35579136')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_35579136" itemid="35579136"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="35579136" extime="1619233200861" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35579136" itemid="35579136"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35579136')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">313k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="35579136" title="点击收藏">
+<span id="fav-anim-bar-item-35579136"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_35579136" itemid="35579136"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="35579136" extime="1619233200868" token="34ea204ac2"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <span>
+                        日常生活</span>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/dao_che_qing_zh.html" target="_blank"
+                              title="倒车请注意mp3"></a></div>
+
+<div id="unitBox_item-31259387" itemid="31259387" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259387">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259387"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259387" itembox="31259387"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259387" itemid="31259387"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259387" extime="1619233200874" token="a94e879016"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2228-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:792k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        337</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="20260">
+                <i class="icon-time"></i>
+                00:20</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259387" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259387" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259387" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259387">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259387" data-key="sound_list-item-31259387" data-column="sound_list" data-type="item" data-id="31259387" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259387" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259387" itemid="31259387"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259387" extime="1619233200878" token="08fbb043ea"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259387" itemid="31259387"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259387')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">792k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259387" itemid="31259387"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259387" extime="1619233200878" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259387" itemid="31259387"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259387')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">794k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259387" title="点击收藏">
+<span id="fav-anim-bar-item-31259387"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259387" itemid="31259387"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259387" extime="1619233200885" token="9ae10d554f"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_275.html" target="_blank"
+                              title="2228-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-30138606" itemid="30138606" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-30138606">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_30138606"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="30138606" itembox="30138606"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_30138606" itemid="30138606"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="30138606" extime="1619233200892" token="0be2d39715"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    货车倒车预警信号, etc.(Reversing warning signal for lorries, etc.)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='低品质 单声道  比特率64k 采样率:8k 格式:wav 文件大小:7k'>低品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        230</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="920">
+                <i class="icon-time"></i>
+                00:01</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_30138606" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_30138606" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="30138606" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-30138606">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-30138606" data-key="sound_list-item-30138606" data-column="sound_list" data-type="item" data-id="30138606" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_30138606" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_30138606" itemid="30138606"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="30138606" extime="1619233200897" token="c16be7f1d7"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_30138606" itemid="30138606"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_30138606')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            低品质</span>
+        <span class="td-fund">8</span>
+        <span class="td-size">7k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_30138606" itemid="30138606"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="30138606" extime="1619233200898" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_30138606" itemid="30138606"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_30138606')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            低品质</span>
+        <span class="td-fund">8</span>
+        <span class="td-size">9k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="30138606" title="点击收藏">
+<span id="fav-anim-bar-item-30138606"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_30138606" itemid="30138606"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="30138606" extime="1619233200905" token="7867265bbf"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/62022.html" target="_blank">
+                        Grand Theft Auto</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/miscellaneous_e_5165.html" target="_blank"
+                              title="货车倒车预警信号, etc.(Reversing warning signal for lorries, etc.)"></a></div>
+
+<div id="unitBox_item-44621348" itemid="44621348" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-44621348">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_44621348"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="44621348" itembox="44621348"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_44621348" itemid="44621348"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="44621348" extime="1619233200913" token="0df24c14f3"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    倒车请注意音效</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率705k 采样率:22k 格式:wav 文件大小:684k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        92</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="7940">
+                <i class="icon-time"></i>
+                00:07</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_44621348" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_44621348" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="44621348" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-44621348">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-44621348" data-key="sound_category-item-44621348" data-column="sound_category" data-type="item" data-id="44621348" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_44621348" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_44621348" itemid="44621348"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="44621348" extime="1619233200915" token="91a92cfb19"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_44621348" itemid="44621348"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_44621348')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">684k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_44621348" itemid="44621348"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="44621348" extime="1619233200916" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_44621348" itemid="44621348"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_44621348')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            标准品质</span>
+        <span class="td-fund">12</span>
+        <span class="td-size">157k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="44621348" title="点击收藏">
+<span id="fav-anim-bar-item-44621348"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    <div class="unittags-container">
+        <span class="tags" title="日常生活">日常生活</span>
+            <span class="tags" title="请注意">请注意</span>
+            <span class="tags" title="提示">提示</span>
+            <span class="tags" title="倒车">倒车</span>
+            </div>
+</li>
+
+<input type="hidden" id="itemInfoToken_item_detail_44621348" itemid="44621348"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="44621348" extime="1619233200921" token="5fa55f90ff"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        </div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/dao_che_qing_zh_1.html" target="_blank"
+                              title="倒车请注意音效"></a></div>
+
+<div id="unitBox_item-31416235" itemid="31416235" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31416235">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31416235"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31416235" itembox="31416235"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31416235" itemid="31416235"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31416235" extime="1619233200926" token="c3098ae39b"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    外观:  开始,  倒车转向齿轮,  反向拉左到右,  空闲,  关闭(exterior:  start,  reverse parking shift into gear,  reverse pull left to right,  idle,  shut off)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:wav 文件大小:6m'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        77</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="36610">
+                <i class="icon-time"></i>
+                00:36</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31416235" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31416235" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31416235" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31416235">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31416235" data-key="sound_list-item-31416235" data-column="sound_list" data-type="item" data-id="31416235" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31416235" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31416235" itemid="31416235"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31416235" extime="1619233200931" token="7eb06f2d92"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31416235" itemid="31416235"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31416235')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">6m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31416235" itemid="31416235"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31416235" extime="1619233200931" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31416235" itemid="31416235"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31416235')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31416235" title="点击收藏">
+<span id="fav-anim-bar-item-31416235"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31416235" itemid="31416235"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31416235" extime="1619233200937" token="3b71ff5ddd"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/67975.html" target="_blank">
+                        [1950] 汽车音效</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/chevy_silverado_258.html" target="_blank"
+                              title="外观:  开始,  倒车转向齿轮,  反向拉左到右,  空闲,  关闭(exterior:  start,  reverse parking shift into gear,  reverse pull left to right,  idle,  shut off)"></a></div>
+
+<div id="unitBox_item-31259385" itemid="31259385" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259385">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259385"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259385" itembox="31259385"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259385" itemid="31259385"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259385" extime="1619233200944" token="b64538380d"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2226-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:3m'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        68</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="69820">
+                <i class="icon-time"></i>
+                01:09</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259385" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259385" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259385" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259385">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259385" data-key="sound_list-item-31259385" data-column="sound_list" data-type="item" data-id="31259385" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259385" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259385" itemid="31259385"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259385" extime="1619233200949" token="0e2b37f131"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259385" itemid="31259385"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259385')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259385" itemid="31259385"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259385" extime="1619233200949" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259385" itemid="31259385"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259385')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259385" title="点击收藏">
+<span id="fav-anim-bar-item-31259385"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259385" itemid="31259385"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259385" extime="1619233200954" token="6a8226b1d1"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_273.html" target="_blank"
+                              title="2226-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-31259392" itemid="31259392" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259392">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259392"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259392" itembox="31259392"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259392" itemid="31259392"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259392" extime="1619233200961" token="1fb613ee73"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2233-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:172k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        171</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="4400">
+                <i class="icon-time"></i>
+                00:04</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259392" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259392" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259392" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259392">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259392" data-key="sound_list-item-31259392" data-column="sound_list" data-type="item" data-id="31259392" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259392" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259392" itemid="31259392"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259392" extime="1619233200966" token="c8acafebe4"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259392" itemid="31259392"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259392')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">172k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259392" itemid="31259392"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259392" extime="1619233200966" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259392" itemid="31259392"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259392')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">175k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259392" title="点击收藏">
+<span id="fav-anim-bar-item-31259392"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259392" itemid="31259392"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259392" extime="1619233200974" token="eb8b5624fd"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_280.html" target="_blank"
+                              title="2233-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-31547065" itemid="31547065" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31547065">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31547065"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31547065" itembox="31547065"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31547065" itemid="31547065"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31547065" extime="1619233200979" token="78d178626d"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    急刹车</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率705k 采样率:22k 格式:wav 文件大小:172k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        11648</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="2000">
+                <i class="icon-time"></i>
+                00:02</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31547065" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31547065" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31547065" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31547065">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31547065" data-key="sound_list-item-31547065" data-column="sound_list" data-type="item" data-id="31547065" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31547065" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31547065" itemid="31547065"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31547065" extime="1619233200984" token="54db45a94f"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31547065" itemid="31547065"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31547065')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">172k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31547065" itemid="31547065"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31547065" extime="1619233200984" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31547065" itemid="31547065"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31547065')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            标准品质</span>
+        <span class="td-fund">12</span>
+        <span class="td-size">41k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31547065" title="点击收藏">
+<span id="fav-anim-bar-item-31547065"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31547065" itemid="31547065"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31547065" extime="1619233200991" token="c0adfb1576"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/68038.html" target="_blank">
+                        实用音效-未整理</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/wei_zheng_li_3_11869.html" target="_blank"
+                              title="急刹车"></a></div>
+
+<div id="unitBox_item-31531132" itemid="31531132" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31531132">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31531132"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31531132" itembox="31531132"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31531132" itemid="31531132"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31531132" extime="1619233200998" token="2c459f1492"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    刹车002</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='标准品质 立体声  比特率128k 采样率:44k 格式:mp3 文件大小:404k'>标准品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        3131</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="25890">
+                <i class="icon-time"></i>
+                00:25</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31531132" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31531132" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31531132" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31531132">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31531132" data-key="sound_list-item-31531132" data-column="sound_list" data-type="item" data-id="31531132" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31531132" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31531132" itemid="31531132"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31531132" extime="1619233200002" token="b6af125a44"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31531132" itemid="31531132"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31531132')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            标准品质</span>
+        <span class="td-fund">12</span>
+        <span class="td-size">404k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31531132" title="点击收藏">
+<span id="fav-anim-bar-item-31531132"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31531132" itemid="31531132"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31531132" extime="1619233200009" token="ba99f2ed55"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/68038.html" target="_blank">
+                        实用音效-未整理</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/wei_zheng_li_yi_6563.html" target="_blank"
+                              title="刹车002"></a></div>
+
+<div id="unitBox_item-31831053" itemid="31831053" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31831053">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31831053"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31831053" itembox="31831053"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31831053" itemid="31831053"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31831053" extime="1619233200016" token="a5b105bed4"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    轮胎在路面上打滑:  汽车倒车离开,  抽离(tire skid on pavement:  car reversing away,  pull away)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:wav 文件大小:3m'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        96</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="15480">
+                <i class="icon-time"></i>
+                00:15</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31831053" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31831053" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31831053" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31831053">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-31831053" data-key="sound_category-item-31831053" data-column="sound_category" data-type="item" data-id="31831053" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31831053" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31831053" itemid="31831053"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31831053" extime="1619233200020" token="2d424bb70d"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31831053" itemid="31831053"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31831053')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31831053" itemid="31831053"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31831053" extime="1619233200020" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31831053" itemid="31831053"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31831053')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">607k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31831053" title="点击收藏">
+<span id="fav-anim-bar-item-31831053"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31831053" itemid="31831053"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31831053" extime="1619233200026" token="38fc3b8ffe"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <span>
+                        防滑</span>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/lun_tai_zai_lu_5.html" target="_blank"
+                              title="轮胎在路面上打滑:  汽车倒车离开,  抽离(tire skid on pavement:  car reversing away,  pull away)"></a></div>
+
+<div id="unitBox_item-35593895" itemid="35593895" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-35593895">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_35593895"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="35593895" itembox="35593895"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_35593895" itemid="35593895"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="35593895" extime="1619233200031" token="c9d13a2981"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    花式倒车(fancy-reverse-crash-fx)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:wav 文件大小:1m'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        7</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="8300">
+                <i class="icon-time"></i>
+                00:08</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_35593895" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_35593895" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="35593895" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-35593895">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-35593895" data-key="sound_category-item-35593895" data-column="sound_category" data-type="item" data-id="35593895" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_35593895" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_35593895" itemid="35593895"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="35593895" extime="1619233200037" token="34f92fabf5"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35593895" itemid="35593895"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35593895')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_35593895" itemid="35593895"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="35593895" extime="1619233200037" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35593895" itemid="35593895"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35593895')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">327k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="35593895" title="点击收藏">
+<span id="fav-anim-bar-item-35593895"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_35593895" itemid="35593895"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="35593895" extime="1619233200042" token="5b20b37f46"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <span>
+                        崩溃</span>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/fancy_reverse_c.html" target="_blank"
+                              title="花式倒车(fancy-reverse-crash-fx)"></a></div>
+
+<div id="unitBox_item-35597250" itemid="35597250" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-35597250">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_35597250"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="35597250" itembox="35597250"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_35597250" itemid="35597250"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="35597250" extime="1619233200047" token="01fa4bfbca"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    倒车倒车(backwards-in-crash)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 单声道  比特率705k 采样率:44k 格式:aif 文件大小:61k'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        5</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="710">
+                <i class="icon-time"></i>
+                00:01</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_35597250" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_35597250" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="35597250" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-35597250">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-35597250" data-key="sound_category-item-35597250" data-column="sound_category" data-type="item" data-id="35597250" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_35597250" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_35597250" itemid="35597250"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="35597250" extime="1619233200052" token="c92a962016"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35597250" itemid="35597250"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35597250')">
+        <span class="td-format">aif</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">61k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_wav_35597250" itemid="35597250"
+       fuid=""
+        
+ftype="item_audio_wav" fmodel="down" rurl="35597250" extime="1619233200052" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35597250" itemid="35597250"
+       item-down-type="item_audio_wav"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35597250')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">61k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_35597250" itemid="35597250"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="35597250" extime="1619233200052" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35597250" itemid="35597250"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35597250')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">31k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="35597250" title="点击收藏">
+<span id="fav-anim-bar-item-35597250"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    <div class="unittags-container">
+        <span class="tags" title="crash1">crash1</span>
+            </div>
+</li>
+
+<input type="hidden" id="itemInfoToken_item_detail_35597250" itemid="35597250"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="35597250" extime="1619233200057" token="8998ed368a"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <span>
+                        锣鼓和超级撞车</span>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/backwards_in_cr.html" target="_blank"
+                              title="倒车倒车(backwards-in-crash)"></a></div>
+
+<div id="unitBox_item-35594436" itemid="35594436" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-35594436">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_35594436"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="35594436" itembox="35594436"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_35594436" itemid="35594436"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="35594436" extime="1619233200061" token="471d9bd0c6"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    倒车撞车事故(backhit-crash-glissdown)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:aif 文件大小:458k'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        1</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="2660">
+                <i class="icon-time"></i>
+                00:02</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_35594436" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_35594436" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="35594436" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-35594436">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-35594436" data-key="sound_category-item-35594436" data-column="sound_category" data-type="item" data-id="35594436" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_35594436" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_35594436" itemid="35594436"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="35594436" extime="1619233200067" token="f1318b7dc5"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35594436" itemid="35594436"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35594436')">
+        <span class="td-format">aif</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">458k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_wav_35594436" itemid="35594436"
+       fuid=""
+        
+ftype="item_audio_wav" fmodel="down" rurl="35594436" extime="1619233200067" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35594436" itemid="35594436"
+       item-down-type="item_audio_wav"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35594436')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">458k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_35594436" itemid="35594436"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="35594436" extime="1619233200067" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_35594436" itemid="35594436"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_35594436')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">106k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="35594436" title="点击收藏">
+<span id="fav-anim-bar-item-35594436"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_35594436" itemid="35594436"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="35594436" extime="1619233200072" token="b5b5f59a9d"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <span>
+                        其他铜钹</span>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/backhit_crash_g.html" target="_blank"
+                              title="倒车撞车事故(backhit-crash-glissdown)"></a></div>
+
+<div id="unitBox_item-31259388" itemid="31259388" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259388">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259388"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259388" itembox="31259388"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259388" itemid="31259388"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259388" extime="1619233200079" token="9455d324e4"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2229-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:1m'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        50</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="26250">
+                <i class="icon-time"></i>
+                00:26</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259388" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259388" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259388" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259388">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259388" data-key="sound_list-item-31259388" data-column="sound_list" data-type="item" data-id="31259388" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259388" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259388" itemid="31259388"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259388" extime="1619233200083" token="0df766450e"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259388" itemid="31259388"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259388')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259388" itemid="31259388"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259388" extime="1619233200084" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259388" itemid="31259388"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259388')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259388" title="点击收藏">
+<span id="fav-anim-bar-item-31259388"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259388" itemid="31259388"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259388" extime="1619233200090" token="4ada97bb9a"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_276.html" target="_blank"
+                              title="2229-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-31416313" itemid="31416313" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31416313">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31416313"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31416313" itembox="31416313"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31416313" itemid="31416313"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31416313" extime="1619233200097" token="8b12d671f0"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    外观:  倒车转向齿轮,  对扭转头拉起,  空闲,  关闭(exterior:  reverse parking shift into gear,  reverse pull up head on,  idle,  shut off)</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='SQ无损品质 立体声  比特率1411k 采样率:44k 格式:wav 文件大小:3m'>SQ无损品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        9</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="19070">
+                <i class="icon-time"></i>
+                00:19</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31416313" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31416313" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31416313" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31416313">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31416313" data-key="sound_list-item-31416313" data-column="sound_list" data-type="item" data-id="31416313" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31416313" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31416313" itemid="31416313"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31416313" extime="1619233200100" token="21ac2109ee"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31416313" itemid="31416313"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31416313')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            SQ无损品质<span class="td-vip"> vip</span>
+            </span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31416313" itemid="31416313"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31416313" extime="1619233200100" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31416313" itemid="31416313"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31416313')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">747k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31416313" title="点击收藏">
+<span id="fav-anim-bar-item-31416313"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31416313" itemid="31416313"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31416313" extime="1619233200105" token="98ac091dcd"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/67975.html" target="_blank">
+                        [1950] 汽车音效</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/chevy_suburban_235.html" target="_blank"
+                              title="外观:  倒车转向齿轮,  对扭转头拉起,  空闲,  关闭(exterior:  reverse parking shift into gear,  reverse pull up head on,  idle,  shut off)"></a></div>
+
+<div id="unitBox_item-31259391" itemid="31259391" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259391">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259391"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259391" itembox="31259391"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259391" itemid="31259391"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259391" extime="1619233200115" token="8f54a2a89e"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2232-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:510k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        24</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="13050">
+                <i class="icon-time"></i>
+                00:13</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259391" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259391" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259391" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259391">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259391" data-key="sound_list-item-31259391" data-column="sound_list" data-type="item" data-id="31259391" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259391" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259391" itemid="31259391"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259391" extime="1619233200118" token="d462ff2af1"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259391" itemid="31259391"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259391')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">510k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259391" itemid="31259391"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259391" extime="1619233200118" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259391" itemid="31259391"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259391')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">512k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259391" title="点击收藏">
+<span id="fav-anim-bar-item-31259391"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259391" itemid="31259391"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259391" extime="1619233200123" token="e98937dd63"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_279.html" target="_blank"
+                              title="2232-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-43004858" itemid="43004858" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-43004858">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_43004858"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="43004858" itembox="43004858"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_43004858" itemid="43004858"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="43004858" extime="1619233200130" token="bf20486edc"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    综艺跑步急刹车音效</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率705k 采样率:22k 格式:wav 文件大小:88k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        6020</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="1020">
+                <i class="icon-time"></i>
+                00:01</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_43004858" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_43004858" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="43004858" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-43004858">
+<input type="hidden" name="markUnitKeyHidden" value="sound_category-item-43004858" data-key="sound_category-item-43004858" data-column="sound_category" data-type="item" data-id="43004858" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_43004858" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_43004858" itemid="43004858"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="43004858" extime="1619233200134" token="15ddba822a"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_43004858" itemid="43004858"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_43004858')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">88k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_43004858" itemid="43004858"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="43004858" extime="1619233200135" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_43004858" itemid="43004858"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_43004858')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            标准品质</span>
+        <span class="td-fund">12</span>
+        <span class="td-size">22k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="43004858" title="点击收藏">
+<span id="fav-anim-bar-item-43004858"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    <div class="unittags-container">
+        <span class="tags" title="音效">音效</span>
+            <span class="tags" title="日常生活">日常生活</span>
+            <span class="tags" title="综艺">综艺</span>
+            <span class="tags" title="急刹车">急刹车</span>
+            <span class="tags" title="跑步">跑步</span>
+            </div>
+</li>
+
+<input type="hidden" id="itemInfoToken_item_detail_43004858" itemid="43004858"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="43004858" extime="1619233200142" token="503693f5ed"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        </div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/zong_yi_pao_bu.html" target="_blank"
+                              title="综艺跑步急刹车音效"></a></div>
+
+<div id="unitBox_item-31259394" itemid="31259394" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259394">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259394"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259394" itembox="31259394"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259394" itemid="31259394"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259394" extime="1619233200147" token="2b3d80faf6"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2235-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:3m'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        8</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="68480">
+                <i class="icon-time"></i>
+                01:08</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259394" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259394" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259394" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259394">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259394" data-key="sound_list-item-31259394" data-column="sound_list" data-type="item" data-id="31259394" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259394" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259394" itemid="31259394"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259394" extime="1619233200151" token="4ced9b28b3"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259394" itemid="31259394"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259394')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259394" itemid="31259394"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259394" extime="1619233200151" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259394" itemid="31259394"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259394')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">20</span>
+        <span class="td-size">3m</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259394" title="点击收藏">
+<span id="fav-anim-bar-item-31259394"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259394" itemid="31259394"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259394" extime="1619233200157" token="91ca2f5ae4"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_282.html" target="_blank"
+                              title="2235-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-31259386" itemid="31259386" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259386">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259386"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259386" itembox="31259386"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259386" itemid="31259386"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259386" extime="1619233200163" token="40ace9d8bd"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2227-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:895k'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        55</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="22900">
+                <i class="icon-time"></i>
+                00:22</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259386" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259386" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259386" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259386">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259386" data-key="sound_list-item-31259386" data-column="sound_list" data-type="item" data-id="31259386" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259386" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259386" itemid="31259386"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259386" extime="1619233200167" token="f968044b07"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259386" itemid="31259386"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259386')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">895k</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259386" itemid="31259386"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259386" extime="1619233200167" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259386" itemid="31259386"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259386')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">897k</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259386" title="点击收藏">
+<span id="fav-anim-bar-item-31259386"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259386" itemid="31259386"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259386" extime="1619233200173" token="d03d0113af"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_274.html" target="_blank"
+                              title="2227-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div id="unitBox_item-31259389" itemid="31259389" itemdetail="audio"
+         class="unit-container-row unit-container-audio unit-container-audio-item" unit-key="item-31259389">
+        <ul class="audion-container-content">
+            <li id="audioItemBox_31259389"
+    class="audio-item-box audio-item-box-search-mode-true"
+    itemid="31259389" itembox="31259389"
+    lastitem="" set-id="">
+    <input type="hidden" id="itemInfoToken_audio_mp3_31259389" itemid="31259389"
+       fuid=""
+        
+ftype="audio_mp3" fmodel="play" rurl="31259389" extime="1619233200179" token="bab1589c30"
+ cbk="callBackAudioFilePlay"  rcbk="downloadAudioCallback" 
+/>
+<div class="audio-item-row audio-item-row1">
+
+        <div class="title">
+            <span class="title-name">
+                    2230-重型机动车启动、行驶、倒车、卸货、鸣笛、车门</span>
+            </div>
+
+        <div class="audio-file-info">
+            <span class='quality' title='HQ高品质 立体声  比特率320k 采样率:44k 格式:wav 文件大小:1m'>HQ高品质</span><span class="split">|</span>
+                <span class="down-num">
+                    <i class="glyphicon glyphicon-download-alt download-icon"></i>
+                        21</span>
+            <span class="split">|</span>
+                <span class="duration" title="音效长度" duration="33920">
+                <i class="icon-time"></i>
+                00:33</span>
+
+        </div>
+
+    </div>
+
+    <div class="audio-item-row audio-item-row2">
+
+        <div class="audio-wave-player">
+        </div>
+
+        <div class="audio-right-box">
+                <div class="audio-player-options">
+                    <div class="dropdown speed" title="选择播放倍速">
+                        <span id="dLabelSpeed_31259389" type="button" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                            <span style="border: 1px solid #aaa;border-radius: 5px;padding: 1px 5px;">
+                                <span class="speed-title">x1倍</span>
+                                <span style="position: relative;top: 9px;font-size: 18px;line-height: 13px;">ˇ</span>
+                            </span>
+
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li speed="0.7">×0.7倍</li>
+                            <li class="selected" speed="1">×1倍</li>
+                            <li speed="1.5">×1.5倍</li>
+                            <li speed="2">×2倍</li>
+                            <li speed="2.5">×2.5倍</li>
+                            <li speed="3">×3倍</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting" title="播放器设置">
+                        <i class="icon-cog" style="color: #aaa"></i>
+                        <div class="setting-body" style="display: none;">
+                            <div style="width: 120px; height: 60px;">
+                                <div id="change_engine_31259389" class="change-engine">
+                                    <select class="play-engine">
+                                        <option value="h5Play">h5播放器</option>
+                                        <option value="flashPlay">flash播放器</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="complain">
+                        <span class="complain-btn btn btn-link" style="padding:0 6px;position: relative;top:-2px;"
+unit-type="item" unit-id="31259389" title="点击举报">
+<i class="glyphicon glyphicon-alert"></i>
+<span>举报</span>
+</span></div>
+                </div>
+
+                </div>
+
+        <div class="mark-bar mark-bar-row-empty" id="mark-bar-item-31259389">
+<input type="hidden" name="markUnitKeyHidden" value="sound_list-item-31259389" data-key="sound_list-item-31259389" data-column="sound_list" data-type="item" data-id="31259389" layout-model="row" show-mark-play="" show-down-time=""/>
+
+</div>
+
+    <div class="audio-download-box audio-download-box-common">
+    <span id="audio-item-down_31259389" class="audio-down-btn dropdown btn btn-default">
+    <a id="audioDropMenu" href="#" class="dropdown-toggle item-down-btn-audio-tip" data-toggle="dropdown"
+       aria-expanded="false">
+            <i class="icon-download-alt"></i>
+        <span onclick="gei.util.loadCoin('.audio-download-box .my-coin');">下载</span>
+    </a>
+    <ul class="dropdown-menu audio-down-dropdown-menu" aria-labelledby="audioDropMenu"
+        style="width:270px">
+        <li class="table-header">
+            <span class="td-format">格式</span>
+            <span class="td-quality">品质</span>
+            <span class="td-fund">铜币</span>
+            <span class="td-size">大小</span>
+        </li>
+        <li class="divider"></li>
+        <li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_31259389" itemid="31259389"
+       fuid=""
+        
+ftype="item_audio" fmodel="down" rurl="31259389" extime="1619233200182" token="5a3f2243f4"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259389" itemid="31259389"
+       item-down-type="item_audio"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259389')">
+        <span class="td-format">wav</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="table-row">
+    <input type="hidden" id="itemInfoToken_item_audio_mp3_31259389" itemid="31259389"
+       fuid=""
+        
+ftype="item_audio_mp3" fmodel="down" rurl="31259389" extime="1619233200182" token="4a7c056601"
+ rcbk="downloadAudioCallback" 
+/>
+<a id="audio-item-down_31259389" itemid="31259389"
+       item-down-type="item_audio_mp3"
+       class="item-down-btn item-down-btn-audio hover-link"
+       onclick="itemFileDown(this,'#audio-item-down_31259389')">
+        <span class="td-format">mp3</span>
+        <span class="td-quality">
+            HQ高品质</span>
+        <span class="td-fund">15</span>
+        <span class="td-size">1m</span>
+    </a>
+</li><li class="divider" style="margin: 0"></li>
+            <li class="table-footer">
+                <span style="float: left;" class="my-coin"></span>
+                <span style="float:right;">不同格式铜币可抵扣</span>
+                </li>
+        </ul>
+</span>
+
+    <span class="fav-btn btn btn-default" style="" fav="false"
+	  unit-type="item" unit-id="31259389" title="点击收藏">
+<span id="fav-anim-bar-item-31259389"
+	  class="icon-star-empty mark-animation hide"
+	  style="position: absolute;"></span>
+<i class="icon-star-empty"></i>
+<span>收藏</span>
+</span></div>
+</div>
+
+    <div class="audio-info-dir-group">
+        &nbsp;</div>
+
+    </li>
+
+<input type="hidden" id="itemInfoToken_item_detail_31259389" itemid="31259389"
+       fuid=""
+        
+ftype="item_detail" fmodel="play" rurl="31259389" extime="1619233200187" token="96ebbfd7c7"
+ cbk="callBackItemDetail"  rcbk="downloadAudioCallback" 
+/>
+</ul>
+        <div class="unit-box-from" title="">
+        <span class="dir-icon icon-folder-close-alt"></span>
+        <a href="/view/66171.html" target="_blank">
+                        [2600] 综合音效库</a>
+                </div>
+</div>
+<div class="item-info-row"></div><div class="item-view-url"><a href="/item/gong_kuang_ji_277.html" target="_blank"
+                              title="2230-重型机动车启动、行驶、倒车、卸货、鸣笛、车门"></a></div>
+
+<div class="rescListPageNav pager-big">
+    <div class="blueFoot pageNav" style="float:none"><span class="page-btn-blank page-btn-size-big "></span><strong>1</strong><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('2')">2</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('3')">3</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('4')">4</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('5')">5</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('6')">6</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('7')">7</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('8')">8</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('9')">9</span><span>...</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('200')">200</span><span class="page-btn page-btn-size-big " onclick="gei.search.changePageNum('2')">下一页</span></div></div>
+</div>
+        </div>
+
+
+
+<script>
+    var searchType = "";
+    var searchTypeDefault = "all";
+    var searchPageNum = "1";
+
+    var oldSearchType = "";
+    var oldSearchKeyword = "倒车";
+    var resultPageOneRowCount = "1";
+
+    //dim分割
+    var dimSplitChar = '-';
+
+    $(function () {
+
+        setAjaxIsTipLoginWin('');
+
+        gei.search.searchKeywordLongIsShowTip("","");
+
+//    debugger;
+//    //fixme:只有第一次存在，考虑是否还需要
+        gei.core.eventBus.on("beforePjaxCacheRequested", function (p) {
+            if (p.url.indexOf('/dim') > 1)
+                $('#dimContainer_hold').show();
+        });
+
+        gei.core.eventBus.on("afterPjaxCacheDone", function (p) {
+            if (p.url.indexOf('/dim') > 1)
+                $('#dimContainer_hold').hide();
+        });
+
+        if ('' != 'true') {
+            $('.soRestTotal').html('41315');
+        }
+
+        var mainPageTitle = $('#mainPageTitle');
+        if (mainPageTitle.size() > 0 && ('' == '' && '' == '' && '' == '')) {
+            $('title').html(mainPageTitle.val());
+        } else {
+            $('title').html('倒车 - 声音素材 免费下载 - 爱给网');
+        }
+
+        
+        var tabActive = $("li.active[data-subject-code='sound'][data-parent-id]");
+        if (tabActive) {
+            gei.search.changeActive(tabActive.attr("data-parent-id"));
+        }
+
+        gei.search.triggerResponsiveView();
+    });
+</script>
