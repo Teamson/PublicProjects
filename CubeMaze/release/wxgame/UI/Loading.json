@@ -1,1 +1,0 @@
-{"type":"Scene","props":{"width":1334,"runtime":"scripts/StageLoad.ts","height":750},"compId":2,"child":[{"type":"Image","props":{"skin":"comp/image.png"},"compId":3},{"type":"ProgressBar","props":{"y":423,"x":56,"value":0,"skin":"comp/progress.png"},"compId":4}],"loadList":["comp/image.png","comp/progress.png"],"loadList3D":[]}

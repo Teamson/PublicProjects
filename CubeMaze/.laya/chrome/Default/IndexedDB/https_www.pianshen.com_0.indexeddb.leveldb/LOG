@@ -1,6 +1,0 @@
-2021/04/27-16:02:09.033 6e10 Creating DB D:\nimoJACK\Work\Projects\03\CubeMaze\CubeMaze\.laya\chrome\Default\IndexedDB\https_www.pianshen.com_0.indexeddb.leveldb since it was missing.
-2021/04/27-16:02:09.042 6e10 Reusing MANIFEST D:\nimoJACK\Work\Projects\03\CubeMaze\CubeMaze\.laya\chrome\Default\IndexedDB\https_www.pianshen.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/04/27-16:04:28.506 6e10 Level-0 table #5: started
-2021/04/27-16:04:28.509 6e10 Level-0 table #5: 1389 bytes OK
-2021/04/27-16:04:28.513 6e10 Delete type=0 #3
-2021/04/27-16:04:28.513 6e10 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
