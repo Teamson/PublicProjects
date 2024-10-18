@@ -1,0 +1,1 @@
+window.SGSdkConf={app_key:"d050f88ad55b74d5c21372f7cb063294",req_domain:"https://api.junmeishiye.cn",version:"1.0.5"};
