@@ -1,0 +1,30 @@
+{
+  "description": "项目配置文件。",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": true,
+    "minified": false,
+    "newFeature": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "condition": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "game",
+  "libVersion": "2.33.0",
+  "appid": "wx349531500918132d",
+  "projectname": "layaWXTest",
+  "condition": {},
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}
